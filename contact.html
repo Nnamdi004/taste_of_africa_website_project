@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="west-africa.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-title">
+      <h1>Contact Us</h1>
+      <p>Share a recipe, ask a question, or just say hello.</p>
+    </div>
+
+    <section class="section">
+      <form id="contact-form">
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="country">Country</label>
+          <input type="text" id="country" name="country" list="countries" placeholder="Start typing…" required>
+          <datalist id="countries">
+            <option value="Nigeria"></option>
+            <option value="Ghana"></option>
+            <option value="Rwanda"></option>
+            <option value="Ethiopia"></option>
+            <option value="Kenya"></option>
+            <option value="Morocco"></option>
+            <option value="Egypt"></option>
+            <option value="South Africa"></option>
+            <option value="United Kingdom"></option>
+            <option value="United States"></option>
+          </datalist>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" aria-describedby="message-error" required></textarea>
+          <p id="message-error" class="error" role="alert"></p>
+        </div>
+        <button type="submit">Send message</button>
+      </form>
+
+      <div id="confirmation" class="confirmation hidden" tabindex="-1" role="status">
+        <h2>Message sent</h2>
+        <p id="confirm-text"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h2>Tastes of Africa</h2><p>Celebrating African food heritage, one dish at a time.</p></div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>

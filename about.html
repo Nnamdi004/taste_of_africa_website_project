@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="west-africa.html">Regions</a></li>
+        <li><a href="about.html" aria-current="page">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-title"><h1>About Us</h1></div>
+
+    <section class="section">
+      <h2>Our mission</h2>
+      <blockquote class="mission">
+        Tastes of Africa exists to celebrate and preserve African food heritage, sharing the recipes, ingredients and stories that connect families and communities across the continent and the diaspora.
+      </blockquote>
+    </section>
+
+    <section class="section">
+      <h2>A brief history of African cuisine</h2>
+      <p>African food traditions stretch back thousands of years. Indigenous crops such as <mark>sorghum</mark>, <mark>millet</mark>, yams and teff were cultivated long before the arrival of tomatoes, chillies and maize from the Americas, which were later folded into local cooking.</p>
+      <p>Trade routes across the Sahara, the Nile and the Indian Ocean carried spices, grains and techniques between regions. Today African flavours travel the world: jollof, injera and tagine appear on menus far beyond their homelands, and African chefs are leading a new wave of global interest.</p>
+    </section>
+
+    <section class="section alt">
+      <div class="inner">
+        <h2>A cultural food landmark</h2>
+        <p>Jemaa el-Fnaa in Marrakech, Morocco, transforms every evening into one of the world's great open-air food markets.</p>
+        <div class="map-wrap">
+          <iframe src="https://www.google.com/maps?q=Jemaa+el-Fnaa,+Marrakech&amp;output=embed" title="Map of Jemaa el-Fnaa market square in Marrakech" loading="lazy"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h2>Tastes of Africa</h2><p>Celebrating African food heritage, one dish at a time.</p></div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>

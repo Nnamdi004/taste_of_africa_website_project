@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipes | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="west-africa.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-title">
+      <h1>Recipes</h1>
+      <p>Filter by region and save the dishes you want to cook later with ❤️ Favorite.</p>
+    </div>
+
+    <section class="section" aria-labelledby="recipe-list">
+      <h2 id="recipe-list">Browse Dishes</h2>
+      <div class="filters" role="group" aria-label="Filter recipes by region">
+        <button type="button" class="filter-btn active" data-region="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-btn" data-region="west-africa" aria-pressed="false">West Africa</button>
+        <button type="button" class="filter-btn" data-region="east-africa" aria-pressed="false">East Africa</button>
+        <button type="button" class="filter-btn" data-region="north-africa" aria-pressed="false">North Africa</button>
+      </div>
+      <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+
+      <div class="card-grid">
+        <div class="card recipe-card" data-region="west-africa">
+          <figure><img src="images/jollof.svg" alt="Jollof rice" loading="lazy"><figcaption>Jollof Rice</figcaption></figure>
+          <div class="card-body">
+            <span class="tag">West Africa · Nigeria</span>
+            <p>Party-famous rice in a spiced tomato and pepper base.</p>
+            <div class="card-actions">
+              <a class="btn" href="jollof-rice.html">Recipe</a>
+              <button type="button" class="fav-btn" data-id="jollof-rice"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </div>
+        <div class="card recipe-card" data-region="east-africa">
+          <figure><img src="images/injera.svg" alt="Injera flatbread" loading="lazy"><figcaption>Injera</figcaption></figure>
+          <div class="card-body">
+            <span class="tag">East Africa · Ethiopia</span>
+            <p>Sour, spongy teff flatbread that doubles as a plate.</p>
+            <div class="card-actions">
+              <a class="btn" href="injera.html">Recipe</a>
+              <button type="button" class="fav-btn" data-id="injera"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </div>
+        <div class="card recipe-card" data-region="north-africa">
+          <figure><img src="images/tagine.svg" alt="Chicken tagine" loading="lazy"><figcaption>Chicken Tagine</figcaption></figure>
+          <div class="card-body">
+            <span class="tag">North Africa · Morocco</span>
+            <p>Tender chicken with preserved lemon and olives.</p>
+            <div class="card-actions">
+              <a class="btn" href="tagine.html">Recipe</a>
+              <button type="button" class="fav-btn" data-id="tagine"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </div>
+        <div class="card recipe-card" data-region="east-africa">
+          <figure><img src="images/isombe.svg" alt="Isombe cassava leaf stew" loading="lazy"><figcaption>Isombe</figcaption></figure>
+          <div class="card-body">
+            <span class="tag">East Africa · Rwanda</span>
+            <p>Cassava leaves stewed with eggplant and groundnut paste.</p>
+            <div class="card-actions">
+              <a class="btn" href="isombe.html">Recipe</a>
+              <button type="button" class="fav-btn" data-id="isombe"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h2>Tastes of Africa</h2><p>Celebrating African food heritage, one dish at a time.</p></div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>
