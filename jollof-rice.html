@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jollof Rice | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="west-africa.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-title">
+      <h1>Jollof Rice</h1>
+      <p>West Africa · Nigeria</p>
+    </div>
+
+    <section class="section">
+      <div class="recipe-layout">
+        <div class="recipe-hero">
+          <img src="images/jollof.svg" alt="A pot of Nigerian party jollof rice">
+        </div>
+        <div class="panel">
+          <h2>About the dish</h2>
+          <p>Jollof is rice cooked in a spiced tomato and pepper sauce, and it is the centrepiece of weddings, birthdays and Sunday lunches across West Africa. Nigerians and Ghanaians famously debate whose version is best. Nigerian party jollof uses long-grain rice and a smoky <mark>tomato–pepper base</mark> with <mark>scotch bonnet</mark>, thyme and curry powder.</p>
+          <button type="button" class="fav-btn" data-id="jollof-rice"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+        </div>
+
+        <div class="panel">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>3 cups long-grain parboiled rice</li>
+            <li>5 ripe tomatoes, 2 red bell peppers, 1–2 scotch bonnets (blended)</li>
+            <li>1 large onion, sliced</li>
+            <li>½ cup vegetable oil, 2 tbsp tomato paste</li>
+            <li>2 cups chicken or vegetable stock</li>
+            <li>1 tsp each thyme and curry powder, 2 bay leaves</li>
+            <li>Salt to taste</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Instructions</h2>
+          <details open>
+            <summary>Make the sauce</summary>
+            <ol>
+              <li>Heat the oil and fry the onion until soft.</li>
+              <li>Stir in the tomato paste for 3–4 minutes, then add the blended peppers.</li>
+              <li>Cook uncovered until the sauce reduces and the oil floats on top.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Cook the rice</summary>
+            <ol>
+              <li>Add stock, thyme, curry powder, bay leaves and salt.</li>
+              <li>Wash the rice until the water runs clear, then stir it in.</li>
+              <li>Cover tightly (use foil under the lid) and cook on low heat for 25–30 minutes.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Finish and serve</summary>
+            <p>Fluff with a fork and serve with fried plantain, chicken or moin-moin.</p>
+          </details>
+        </div>
+
+        <div class="panel">
+          <h2>Nutrition (per serving, approx.)</h2>
+          <table>
+            <caption>Estimated values for 1 of 6 servings</caption>
+            <thead><tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Calories</th><td>420 kcal</td></tr>
+              <tr><th scope="row">Carbohydrates</th><td>68 g</td></tr>
+              <tr><th scope="row">Protein</th><td>8 g</td></tr>
+              <tr><th scope="row">Fat</th><td>13 g</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <h2>Where it comes from</h2>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps?q=Nigeria&amp;output=embed" title="Map of Nigeria" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+
+        <div class="wide">
+          <h2>Video tutorial</h2>
+          <div class="video-wrap">
+            <iframe src="https://www.youtube.com/embed/MvJ9z7zcMI0" title="Nigerian jollof rice tutorial" loading="lazy" allowfullscreen></iframe>
+          </div>
+          <p style="text-align:center; margin-top:1rem;"><a href="recipes.html">← Back to all recipes</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h2>Tastes of Africa</h2><p>Celebrating African food heritage, one dish at a time.</p></div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>
