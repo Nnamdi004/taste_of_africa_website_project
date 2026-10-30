@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tastes of Africa – explore the dishes, regions and stories behind African cuisine.">
+  <title>Tastes of Africa | Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="west-africa.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <h1 id="hero-title">Welcome to the Flavours of a Continent</h1>
+        <p>From smoky <mark>jollof</mark> in Lagos to spiced <mark>berbere</mark> stews in Addis Ababa, African cuisine is a story of land, trade and togetherness. Pull up a chair.</p>
+        <a class="btn" href="recipes.html">Explore Recipes</a>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/iTRN6gNwlqU" title="Introduction to African food and drink culture" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="featured">
+      <h2 id="featured">Featured Dishes</h2>
+      <div class="card-grid">
+        <div class="card">
+          <figure>
+            <img src="images/jollof.svg" alt="A pot of orange jollof rice" loading="lazy">
+            <figcaption>Jollof Rice</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="tag">West Africa</span>
+            <p>Rice simmered in a rich tomato and <mark>scotch bonnet</mark> sauce – the star of every Nigerian and Ghanaian party.</p>
+            <a class="btn" href="jollof-rice.html">View recipe</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="images/injera.svg" alt="Spongy injera flatbread topped with stews" loading="lazy">
+            <figcaption>Injera</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="tag">East Africa</span>
+            <p>A tangy, fermented flatbread made from <mark>teff</mark>, used as both plate and spoon in Ethiopia and Eritrea.</p>
+            <a class="btn" href="injera.html">View recipe</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="images/tagine.svg" alt="A conical clay tagine pot" loading="lazy">
+            <figcaption>Chicken Tagine</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="tag">North Africa</span>
+            <p>Slow-cooked chicken with <mark>preserved lemon</mark>, olives and saffron, simmered in a clay pot.</p>
+            <a class="btn" href="tagine.html">View recipe</a>
+          </div>
+        </div>
+        <div class="card">
+          <figure>
+            <img src="images/isombe.svg" alt="Green cassava leaf stew" loading="lazy">
+            <figcaption>Isombe</figcaption>
+          </figure>
+          <div class="card-body">
+            <span class="tag">East Africa</span>
+            <p>Rwanda's comforting stew of pounded <mark>cassava leaves</mark> with eggplant, groundnuts and palm oil.</p>
+            <a class="btn" href="isombe.html">View recipe</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" aria-labelledby="regions">
+      <div class="inner">
+        <h2 id="regions">Explore by Region</h2>
+        <div class="region-links">
+          <a class="r-west" href="west-africa.html">West Africa<small>Jollof, egusi, suya</small></a>
+          <a class="r-east" href="east-africa.html">East Africa<small>Injera, isombe, nyama choma</small></a>
+          <a class="r-north" href="north-africa.html">North Africa<small>Tagine, couscous, harissa</small></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="trends">
+      <h2 id="trends">Latest Food Trends</h2>
+      <article class="trend">
+        <h3>Ancient Grains Go Global</h3>
+        <time datetime="2026-10-12">12 October 2026</time>
+        <p>Chefs worldwide are rediscovering <mark>fonio</mark>, <mark>teff</mark> and sorghum for their nutrition and resilience to climate stress.</p>
+      </article>
+      <article class="trend">
+        <h3>Street Food Takes the Spotlight</h3>
+        <time datetime="2026-09-28">28 September 2026</time>
+        <p>From Lagos <mark>suya</mark> spots to Accra's chop bars, street vendors are being celebrated in food festivals and travel shows.</p>
+      </article>
+      <article class="trend">
+        <h3>African Chefs on Culinary Tours</h3>
+        <time datetime="2026-08-05">5 August 2026</time>
+        <p>Creators are touring several West African countries to showcase shared and distinct food traditions to a global audience.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h2>Tastes of Africa</h2>
+      <p>Celebrating African food heritage, one dish at a time.</p>
+      <p><a href="contact.html">Contact us</a> · <a href="about.html">About</a></p>
+    </div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>
