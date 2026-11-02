@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chicken Tagine | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="west-africa.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-title">
+      <h1>Chicken Tagine</h1>
+      <p>North Africa · Morocco</p>
+    </div>
+
+    <section class="section">
+      <div class="recipe-layout">
+        <div class="recipe-hero">
+          <img src="images/tagine.svg" alt="A conical tagine pot with chicken and olives">
+        </div>
+        <div class="panel">
+          <h2>About the dish</h2>
+          <p>"Tagine" names both the cone-lidded clay pot and the slow-braised stew cooked inside it. This classic Moroccan version balances <mark>preserved lemon</mark>, green olives, <mark>saffron</mark>, ginger and cumin. The lid traps steam so the chicken turns tender with very little added liquid.</p>
+          <button type="button" class="fav-btn" data-id="tagine"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+        </div>
+
+        <div class="panel">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>6 bone-in chicken thighs</li>
+            <li>2 onions, grated or finely sliced</li>
+            <li>3 garlic cloves, minced</li>
+            <li>1 tsp each ginger, turmeric, cumin; pinch of saffron</li>
+            <li>1 preserved lemon, rind sliced</li>
+            <li>¾ cup green olives</li>
+            <li>2 tbsp olive oil, fresh coriander and parsley</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Instructions</h2>
+          <details open>
+            <summary>Marinate and brown</summary>
+            <ol>
+              <li>Rub the chicken with the spices, garlic and olive oil; rest 30 minutes.</li>
+              <li>Brown the pieces in the tagine or a heavy pot.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Braise</summary>
+            <ol>
+              <li>Add the onions and ½ cup water, cover, and simmer on low for 40 minutes.</li>
+              <li>Add the preserved lemon and olives and cook 10 minutes uncovered to thicken the sauce.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Serve</summary>
+            <p>Scatter with herbs and serve with crusty bread or couscous.</p>
+          </details>
+        </div>
+
+        <div class="panel">
+          <h2>Nutrition (per serving, approx.)</h2>
+          <table>
+            <caption>Estimated values for 1 of 6 servings</caption>
+            <thead><tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Calories</th><td>380 kcal</td></tr>
+              <tr><th scope="row">Carbohydrates</th><td>8 g</td></tr>
+              <tr><th scope="row">Protein</th><td>32 g</td></tr>
+              <tr><th scope="row">Fat</th><td>24 g</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <h2>Where it comes from</h2>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps?q=Morocco&amp;output=embed" title="Map of Morocco" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="wide">
+          <h2>Video tutorial</h2>
+          <a class="video-link" href="https://www.youtube.com/results?search_query=moroccan+chicken+tagine+recipe" target="_blank" rel="noopener">▶ Watch tagine tutorials on YouTube (opens in a new tab)</a>
+          <p style="text-align:center; margin-top:1rem;"><a href="recipes.html">← Back to all recipes</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h2>Tastes of Africa</h2><p>Celebrating African food heritage, one dish at a time.</p></div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>

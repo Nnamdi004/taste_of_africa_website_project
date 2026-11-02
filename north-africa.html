@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>North Africa | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">Recipes</a></li>
+        <li><a href="west-africa.html" aria-current="page">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-title">
+      <h1>North Africa</h1>
+      <p>Mediterranean, Berber and Arab flavours meet. <a href="west-africa.html" style="color:var(--yellow)">West Africa</a> · <a href="east-africa.html" style="color:var(--yellow)">East Africa</a></p>
+    </div>
+
+    <section class="section">
+      <h2>Food culture</h2>
+      <p>The Maghreb and the Nile Valley blend Berber, Arab, Ottoman and Mediterranean traditions. Hospitality is expressed through shared dishes and endless glasses of mint tea.</p>
+      <h3>Staples</h3>
+      <p><mark>Couscous</mark>, wheat bread, chickpeas, olives, dates, lamb and chicken, with <mark>harissa</mark>, cumin, saffron and cinnamon for flavour.</p>
+      <h3>Techniques</h3>
+      <p><mark>Slow braising in a tagine</mark>, <mark>steaming couscous</mark> in a couscoussier, preserving lemons, and roasting meat in earthen pits.</p>
+    </section>
+
+    <section class="section alt">
+      <div class="inner">
+        <h2>Example dishes</h2>
+        <div class="card-grid">
+          <div class="card">
+            <figure><img src="images/tagine.svg" alt="Chicken tagine" loading="lazy"><figcaption>Chicken Tagine</figcaption></figure>
+            <div class="card-body"><p>Moroccan clay-pot chicken with preserved lemon and olives.</p><a class="btn" href="tagine.html">Recipe</a></div>
+          </div>
+        </div>
+        <h2 style="margin-top:2rem;">Watch</h2>
+        <div class="video-wrap">
+          <iframe src="https://www.youtube.com/embed/D9Ihs241zeg" title="Introduction to Moroccan food" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h2>Tastes of Africa</h2><p>Celebrating African food heritage, one dish at a time.</p></div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>
