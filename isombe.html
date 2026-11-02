@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isombe | Tastes of Africa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="logo" href="index.html">Tastes of Africa</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html" aria-current="page">Recipes</a></li>
+        <li><a href="west-africa.html">Regions</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <div class="page-title">
+      <h1>Isombe</h1>
+      <p>East Africa · Rwanda</p>
+    </div>
+
+    <section class="section">
+      <div class="recipe-layout">
+        <div class="recipe-hero">
+          <img src="images/isombe.svg" alt="Green isombe cassava leaf stew in a bowl">
+        </div>
+        <div class="panel">
+          <h2>About the dish</h2>
+          <p>Isombe is a Rwandan favourite made from finely pounded <mark>cassava leaves</mark> slow-cooked with eggplant, spinach, onion and <mark>groundnut</mark> paste. It is often served with ugali, rice, plantain or potatoes and is a staple at family meals and gatherings.</p>
+          <button type="button" class="fav-btn" data-id="isombe"><span class="heart" aria-hidden="true">❤️</span> Favorite</button>
+        </div>
+
+        <div class="panel">
+          <h2>Ingredients</h2>
+          <ul>
+            <li>500 g pounded cassava leaves (fresh or frozen)</li>
+            <li>1 eggplant, diced</li>
+            <li>1 onion and 3 garlic cloves, chopped</li>
+            <li>2 tbsp palm or vegetable oil</li>
+            <li>3 tbsp groundnut (peanut) paste</li>
+            <li>1 green pepper, salt, 3 cups water</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <h2>Instructions</h2>
+          <details open>
+            <summary>Build the base</summary>
+            <ol>
+              <li>Boil the cassava leaves in water for 20 minutes, then drain.</li>
+              <li>Sauté onion, garlic, pepper and eggplant in the oil until soft.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Simmer</summary>
+            <ol>
+              <li>Add the leaves and 3 cups of water; cook on low heat for 45–60 minutes.</li>
+              <li>Stir in the groundnut paste and simmer 15 minutes until thick.</li>
+            </ol>
+          </details>
+          <details>
+            <summary>Serve</summary>
+            <p>Taste for salt and serve hot with rice, ugali or boiled plantain.</p>
+          </details>
+        </div>
+
+        <div class="panel">
+          <h2>Nutrition (per serving, approx.)</h2>
+          <table>
+            <caption>Estimated values for 1 of 4 servings</caption>
+            <thead><tr><th scope="col">Nutrient</th><th scope="col">Amount</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Calories</th><td>240 kcal</td></tr>
+              <tr><th scope="row">Carbohydrates</th><td>18 g</td></tr>
+              <tr><th scope="row">Protein</th><td>9 g</td></tr>
+              <tr><th scope="row">Fat</th><td>15 g</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel">
+          <h2>Where it comes from</h2>
+          <div class="map-wrap">
+            <iframe src="https://www.google.com/maps?q=Rwanda&amp;output=embed" title="Map of Rwanda" loading="lazy"></iframe>
+          </div>
+        </div>
+
+        <div class="wide">
+          <h2>Video tutorial</h2>
+          <a class="video-link" href="https://www.youtube.com/results?search_query=how+to+cook+isombe+rwandan" target="_blank" rel="noopener">▶ Watch isombe tutorials on YouTube (opens in a new tab)</a>
+          <p style="text-align:center; margin-top:1rem;"><a href="recipes.html">← Back to all recipes</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div><h2>Tastes of Africa</h2><p>Celebrating African food heritage, one dish at a time.</p></div>
+    <div>
+      <h2>Newsletter</h2>
+      <form class="newsletter" aria-label="Newsletter signup">
+        <label class="sr-only" for="news-email">Email address</label>
+        <input type="email" id="news-email" name="email" placeholder="you@example.com" required>
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="newsletter-msg" role="status"></p>
+    </div>
+  </footer>
+</body>
+</html>
