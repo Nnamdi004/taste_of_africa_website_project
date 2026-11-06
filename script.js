@@ -1,5 +1,12 @@
 // Tastes of Africa — script.js
+const THEME_KEY = "tasteOfAfricaTheme";
+
+// Apply the saved theme immediately so the page doesn't flash the wrong colours
+applyTheme(getInitialTheme());
+
 document.addEventListener("DOMContentLoaded", () => {
+  initThemeToggle();
+  initIngredientScaling();
   initRecipeFilter();
   initFavorites();
   initContactForm();
@@ -97,53 +104,4 @@ function initContactForm() {
   const message = document.getElementById("message");
   const error = document.getElementById("message-error");
   const confirmation = document.getElementById("confirmation");
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-
-    const name = document.getElementById("name").value.trim();
-    const text = message.value.trim();
-
-    if (text.length <= 20) {
-      error.textContent = `Your message needs more than 20 characters (currently ${text.length}).`;
-      message.setAttribute("aria-invalid", "true");
-      message.focus();
-      return;
-    }
-
-    error.textContent = "";
-    message.removeAttribute("aria-invalid");
-    form.classList.add("hidden");
-
-    // textContent keeps user input from being interpreted as HTML
-    document.getElementById("confirm-text").textContent =
-      `Thank you, ${name}! We've received your message.`;
-    confirmation.classList.remove("hidden");
-    confirmation.focus();
-  });
-
-  message.addEventListener("input", () => {
-    if (message.value.trim().length > 20) error.textContent = "";
-  });
-}
-
-/* Optional: newsletter signup ------------------------------------------- */
-function initNewsletter() {
-  document.querySelectorAll(".newsletter").forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      const msg = form.parentElement.querySelector(".newsletter-msg");
-      if (msg) msg.textContent = "Thanks for subscribing! 🌶️";
-      form.reset();
-    });
-  });
-}
-
-/* Graceful fallback if an image file is missing ------------------------- */
-function hideBrokenImages() {
-  document.querySelectorAll("img").forEach((img) => {
-    img.addEventListener("error", () => {
-      img.style.visibility = "hidden";
-    });
-  });
 }

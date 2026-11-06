@@ -41,13 +41,20 @@
 
         <div class="panel">
           <h2>Ingredients</h2>
+          <div class="servings-control" data-base-servings="4">
+            <span class="servings-label">Servings</span>
+            <button type="button" class="servings-btn" data-step="-1" aria-label="Decrease servings">−</button>
+            <output aria-live="polite">4</output>
+            <button type="button" class="servings-btn" data-step="1" aria-label="Increase servings">+</button>
+            <button type="button" class="servings-reset">Reset</button>
+          </div>
           <ul>
-            <li>500 g pounded cassava leaves (fresh or frozen)</li>
-            <li>1 eggplant, diced</li>
-            <li>1 onion and 3 garlic cloves, chopped</li>
-            <li>2 tbsp palm or vegetable oil</li>
-            <li>3 tbsp groundnut (peanut) paste</li>
-            <li>1 green pepper, salt, 3 cups water</li>
+            <li><span class="qty" data-base="500" data-round="int">500</span> g pounded cassava leaves (fresh or frozen)</li>
+            <li><span class="qty" data-base="1" data-round="whole">1</span> eggplant, diced</li>
+            <li><span class="qty" data-base="1" data-round="whole">1</span> onion and <span class="qty" data-base="3" data-round="whole">3</span> garlic cloves, chopped</li>
+            <li><span class="qty" data-base="2">2</span> tbsp palm or vegetable oil</li>
+            <li><span class="qty" data-base="3">3</span> tbsp groundnut (peanut) paste</li>
+            <li><span class="qty" data-base="1" data-round="whole">1</span> green pepper, salt, <span class="qty" data-base="3" data-unit="cup">3</span> cups water</li>
           </ul>
         </div>
         <div class="panel">

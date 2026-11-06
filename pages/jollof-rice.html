@@ -41,13 +41,20 @@
 
         <div class="panel">
           <h2>Ingredients</h2>
+          <div class="servings-control" data-base-servings="6">
+            <span class="servings-label">Servings</span>
+            <button type="button" class="servings-btn" data-step="-1" aria-label="Decrease servings">−</button>
+            <output aria-live="polite">6</output>
+            <button type="button" class="servings-btn" data-step="1" aria-label="Increase servings">+</button>
+            <button type="button" class="servings-reset">Reset</button>
+          </div>
           <ul>
-            <li>3 cups long-grain parboiled rice</li>
-            <li>5 ripe tomatoes, 2 red bell peppers, 1–2 scotch bonnets (blended)</li>
-            <li>1 large onion, sliced</li>
-            <li>½ cup vegetable oil, 2 tbsp tomato paste</li>
-            <li>2 cups chicken or vegetable stock</li>
-            <li>1 tsp each thyme and curry powder, 2 bay leaves</li>
+            <li><span class="qty" data-base="3" data-unit="cup">3</span> cups long-grain parboiled rice</li>
+            <li><span class="qty" data-base="5" data-round="whole">5</span> ripe tomatoes, <span class="qty" data-base="2" data-round="whole">2</span> red bell peppers, <span class="qty" data-base="2" data-round="whole">2</span> scotch bonnets (blended; use fewer for milder heat)</li>
+            <li><span class="qty" data-base="1" data-round="whole">1</span> large onion, sliced</li>
+            <li><span class="qty" data-base="0.5" data-unit="cup">½</span> cup vegetable oil, <span class="qty" data-base="2">2</span> tbsp tomato paste</li>
+            <li><span class="qty" data-base="2" data-unit="cup">2</span> cups chicken or vegetable stock</li>
+            <li><span class="qty" data-base="1">1</span> tsp each thyme and curry powder, <span class="qty" data-base="2" data-round="whole">2</span> bay leaves</li>
             <li>Salt to taste</li>
           </ul>
         </div>

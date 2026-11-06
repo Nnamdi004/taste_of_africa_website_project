@@ -41,14 +41,21 @@
 
         <div class="panel">
           <h2>Ingredients</h2>
+          <div class="servings-control" data-base-servings="6">
+            <span class="servings-label">Servings</span>
+            <button type="button" class="servings-btn" data-step="-1" aria-label="Decrease servings">−</button>
+            <output aria-live="polite">6</output>
+            <button type="button" class="servings-btn" data-step="1" aria-label="Increase servings">+</button>
+            <button type="button" class="servings-reset">Reset</button>
+          </div>
           <ul>
-            <li>6 bone-in chicken thighs</li>
-            <li>2 onions, grated or finely sliced</li>
-            <li>3 garlic cloves, minced</li>
-            <li>1 tsp each ginger, turmeric, cumin; pinch of saffron</li>
-            <li>1 preserved lemon, rind sliced</li>
-            <li>¾ cup green olives</li>
-            <li>2 tbsp olive oil, fresh coriander and parsley</li>
+            <li><span class="qty" data-base="6" data-round="whole">6</span> bone-in chicken thighs</li>
+            <li><span class="qty" data-base="2" data-round="whole">2</span> onions, grated or finely sliced</li>
+            <li><span class="qty" data-base="3" data-round="whole">3</span> garlic cloves, minced</li>
+            <li><span class="qty" data-base="1">1</span> tsp each ginger, turmeric, cumin; pinch of saffron</li>
+            <li><span class="qty" data-base="1" data-round="whole">1</span> preserved lemon, rind sliced</li>
+            <li><span class="qty" data-base="0.75" data-unit="cup">¾</span> cup green olives</li>
+            <li><span class="qty" data-base="2">2</span> tbsp olive oil, fresh coriander and parsley</li>
           </ul>
         </div>
         <div class="panel">

@@ -41,11 +41,18 @@
 
         <div class="panel">
           <h2>Ingredients</h2>
+          <div class="servings-control" data-base-servings="6">
+            <span class="servings-label">Pieces</span>
+            <button type="button" class="servings-btn" data-step="-1" aria-label="Decrease pieces">−</button>
+            <output aria-live="polite">6</output>
+            <button type="button" class="servings-btn" data-step="1" aria-label="Increase pieces">+</button>
+            <button type="button" class="servings-reset">Reset</button>
+          </div>
           <ul>
-            <li>2 cups teff flour</li>
-            <li>½ cup plain flour (optional, for a milder result)</li>
-            <li>3 cups lukewarm water</li>
-            <li>¼ tsp instant yeast (or a spoon of starter)</li>
+            <li><span class="qty" data-base="2" data-unit="cup">2</span> cups teff flour</li>
+            <li><span class="qty" data-base="0.5" data-unit="cup">½</span> cup plain flour (optional, for a milder result)</li>
+            <li><span class="qty" data-base="3" data-unit="cup">3</span> cups lukewarm water</li>
+            <li><span class="qty" data-base="0.25">¼</span> tsp instant yeast (or a spoon of starter)</li>
             <li>Pinch of salt</li>
           </ul>
         </div>
